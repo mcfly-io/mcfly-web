@@ -1,0 +1,17 @@
+{
+  "name": "mcfly",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "marked": "0.3.3",
+    "font-awesome": "4.3.0",
+    "bootstrap": "3.3.4",
+    "angular-material": "0.9.8-rc1"
+  }
+}

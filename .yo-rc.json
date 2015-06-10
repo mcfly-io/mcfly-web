@@ -1,0 +1,14 @@
+{
+  "generator-angular-famous-ionic": {
+    "filenameCase": "camel",
+    "filenameSuffix": false,
+    "appname": "mcfly",
+    "clientFolder": "client",
+    "ionic": false,
+    "famous": false,
+    "ngCordova": false,
+    "fontawesome": true,
+    "bootstrap": true,
+    "material": true
+  }
+}
