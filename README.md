@@ -6,11 +6,20 @@
 ## Description
 The web site for mcfly.io
 
-## Usage
+## Install
+```
+npm install
+```
 
+## Usage
+```
+gulp browsersync
+```
 
 ## Testing
-
+```
+gulp unit
+```
 
 ## Changelog
 
