@@ -2,7 +2,7 @@
   "name": "mcflyio-web",
   "version": "0.0.1",
   "scripts": {
-    "test": "gulp test",
+    "test": "gulp unit",
     "postinstall": "bower install && node ./bin/protractor-fix-version.js"
   },
   "author": "thaiat@ipelia.fr",
