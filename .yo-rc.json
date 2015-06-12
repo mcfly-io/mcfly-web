@@ -2,7 +2,7 @@
   "generator-angular-famous-ionic": {
     "filenameCase": "camel",
     "filenameSuffix": false,
-    "appname": "mcfly",
+    "appname": "mcflyio-web",
     "clientFolder": "client",
     "ionic": false,
     "famous": false,

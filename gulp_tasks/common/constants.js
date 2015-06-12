@@ -102,7 +102,7 @@ module.exports = function() {
             port: 5000,
             open: true,
             browser: ['google chrome'], // ['google chrome', 'firefox'],
-            localtunnel: false, // true, false or 'mcfly'
+            localtunnel: false, // true, false or 'mcflyioweb'
             ghostMode: {
                 clicks: false,
                 forms: false,
