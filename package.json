@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "test": "gulp unit",
-    "postinstall": "bower install && node ./bin/protractor-fix-version.js"
+    "postinstall": "bower install"
   },
   "author": "thaiat@ipelia.fr",
   "repository": {
