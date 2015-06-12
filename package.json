@@ -2,8 +2,7 @@
   "name": "mcflyio-web",
   "version": "0.0.1",
   "scripts": {
-    "test": "gulp unit",
-    "postinstall": "bower install"
+    "test": "gulp unit"
   },
   "author": "thaiat@ipelia.fr",
   "repository": {

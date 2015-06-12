@@ -8,7 +8,7 @@ The web site for mcfly.io
 
 ## Install
 ```
-npm install
+npm install && bower install
 ```
 
 ## Usage
