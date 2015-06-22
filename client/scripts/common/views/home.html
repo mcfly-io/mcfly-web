@@ -31,14 +31,16 @@
                     <h4 style="padding:0;line-height:49px">Get notified when we launch</h4>
                 </div>
                 <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0">
-                    <form class="form" role="form" style="margin:0">
+                    <form class="form" role="form" style="margin:0" validate name="formRegister">
                         <div class="input-group">
                             <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                            <input type="email" name="email" class="form-control input-lg" placeholder="you@domain.com" style="height: 43px;padding-left: 10px;">
+                            <input type="email" name="email" required ng-model="vm.email" class="form-control input-lg" placeholder="you@domain.com" style="height: 43px;padding-left: 10px;">
                             <span class="input-group-btn">
-                                <a class="btn btn-punch btn-primary btn-sm btn-darker" style="background-image:none" type="button">Go!</a>
+                                <a class="btn btn-punch btn-primary btn-sm btn-darker" style="background-image:none" ng-disabled="formRegister.email.$invalid" ng-click="vm.register(formRegister.email.$valid)" type="button">Go!</a>
                             </span>
                         </div>
+                        <p class="email-signup-message has-no-error" ng-show="vm.registerSuccess">Thanks for subscribing, we'll keep you posted.</p>
+                        <p class="email-signup-message has-error" ng-show="vm.registerError">Sorry, we couldn't add this email address.</p>
                     </form>
                 </div>
             </div>
@@ -124,7 +126,9 @@
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <h1 class="lighter">Magic, but not black magic</h1>
                     <p class="lead">We use standard and well maintained technologies. That’s the assemblage of those technologies that creates the magic, not some hack or proprietary protocol that no one else is using.
-                    <br><strong> You will feel at home right away.</strong></p>
+                        <br>
+                        <strong> You will feel at home right away.</strong>
+                    </p>
                     <div class="space hidden-sm hidden-xs"></div>
                 </div>
                 <!-- /.col -->

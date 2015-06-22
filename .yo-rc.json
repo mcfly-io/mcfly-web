@@ -10,5 +10,8 @@
     "fontawesome": true,
     "bootstrap": true,
     "material": true
+  },
+  "generator-mcfly": {
+    "clientFolder": "client"
   }
 }
