@@ -1,21 +1,28 @@
-
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
-  
-
 @import "../../bower_components/bootstrap/dist/css/bootstrap";
 @import "../../bower_components/bootstrap/dist/css/bootstrap-theme";
-
 @import "fonts/_roboto.scss";
-
 //@import "material/style";
 @import "material/animate";
 @import "material/owl.carousel";
 @import "material/themify-icons";
-
 @import "misc/_terminal.scss";
-
 .btn-punch.btn-primary, .btn-punch.btn-info {
-	background-image: none;
+    background-image: none;
 }
-.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
+.nav, .pagination, .carousel, .panel-title a {
+    cursor: pointer;
+}
+
+p.email-signup-message.has-error {
+    color: #de4f4f;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+p.email-signup-message.has-no-error {
+    color: green;
+    font-size: 12px;
+    margin-bottom: 0;
+}

@@ -5,16 +5,33 @@ module.exports = function(app) {
     var fullname = app.name + '.' + controllername;
     /*jshint validthis: true */
 
-    var deps = [];
+    var deps = ['Subscriber'];
 
-    function controller() {
+    function controller(Subscriber) {
         var vm = this;
         vm.controllername = fullname;
 
-        var activate = function() {
+        vm.register = function(valid) {
+            vm.registerError = false;
+            vm.registerSuccess = false;
+            var email = vm.email;
+            vm.email = null;
+            Subscriber.create({
+                    email: email
+                })
+                .$promise
+                .then(function() {
+                    vm.registerSuccess = true;
+                })
+                .catch(function() {
+                    vm.registerError = true;
+                    vm.email = email;
+                })
 
+            .finally(function() {
+                vm.email = null;
+            });
         };
-        activate();
     }
 
     controller.$inject = deps;
