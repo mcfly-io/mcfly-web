@@ -32,6 +32,11 @@ module.exports = function(app) {
                 vm.email = null;
             });
         };
+
+        //vm.video = function(e) {
+        //var videoElements = angular.element(e.srcElement);
+        //videoElements[0].play();
+        //}
     }
 
     controller.$inject = deps;
