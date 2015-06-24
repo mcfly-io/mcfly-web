@@ -1,6 +1,6 @@
 <!-- PARALLAX SECTION -->
 <section>
-    <section class="bigger-padding section background-wrapper half-overlay active-section info-background">
+    <section class="section background-wrapper half-overlay active-section info-background">
         <div class="background-image parallax-background" data-stellar-background-ratio="0.5"></div>
         <div class="container">
             <div class="row">
@@ -48,12 +48,46 @@
         </div>
     </section>
 
-    <section class="section active-section ">
+    <section class="section white-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="lighter">A bit of context</h2>
+                    <p class="lead" style="text-align:justify;margin-bottom:20px">
+                        In the beginning I thought I would come up with a bold and provocative statement such as
+                        <span style="font-style:italic">"How we did firebase in a day"</span>, or
+                        <span style="font-style:italic">"Meteor done the right way"</span> and then I thought again... The truth is I always liked Firebase and Meteor and find their approach super smart. I played a lot with both but couldn't really decide to jump in and make them my stack.
+                        <br>Firebase first is an MBaaS so you don't really own it. You are limited if you want to do complex queries or need to hack the server as we all need to at some point... And try to convince a big French company that their data are going to be somewhere on the cloud along with many others. not fun...
+                        <br>As for Meteor, it's amazing to see how many bright ideas they've implemented, but it never felt main stream enough: the build system is odd to say the least, minimongo highly couples the client with Mongodb, and sticky session are a no go for me when you need to scale.
+                        <br>So I decided to give it a try on my own and I came up with MCFLY.
+                        <br>
+                        <br>The requirements were:
+                        <ul style="font-size:16px;padding:0;margin:0;padding-left:20px">
+                            <li>Use main stream tech only (npm, bower, angular, gulp browserify etc...).</li>
+                            <li>You should be able to install it easily localy, on a customer data center, or in the cloud.</li>
+                            <li>It should lightweight, easy to tweak and keep in pace with evolutions. (you don't need a 1500 commits repo to switch from angular to react).</li>
+                            <li>It should be mobile first, secured and it should encourage code reuse between frontends.</li>
+                            <li>It should be built to scale and use stateless servers.</li>
+                            <li>It should be full stack and database agnostic.</li>
+                            <li>It should elegantly marry REST and realtime and not force you to choose between the two.</li>
+                        </ul>
+
+                    </p>
+                    <p class="lead">We have been using MCFLY internally for the past 6 months and we are very happy with it. It works great!!!
+                        <br>I'm not sure yet I want to open source... It will really depends on the traction.
+                        <br>I'd love to hear your feedback and if you think this could also be usefull for you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section active-section grey-background">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <h2 class="lighter">What's MCFLY ?</h2>
-                    <p class="lead large-lead">MCFLY  is a full-stack javascript platform for painlessly building realtime hybrid mobile and single page apps using the latest mainstream libraries and frameworks, giving you maximum development power in minimum time.</p>
+                    <p class="lead large-lead">MCFLY is a full-stack javascript platform for painlessly building realtime hybrid mobile and single page apps using the latest mainstream libraries and frameworks, giving you maximum development power in minimum time.</p>
                     <p class="lead large-lead">We are not a new awesome framework. We are the glue between awesome frameworks.</p>
                 </div>
                 <div class="col-md-6 terminal">
@@ -94,7 +128,7 @@
         </div>
     </section>
 
-    <section class="section active-section info-background">
+    <section class="section active-section white-background">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
