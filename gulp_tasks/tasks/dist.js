@@ -45,6 +45,9 @@ var taskHtml = function(constants) {
         }))
         .pipe(gulp.dest(dest));
 
+    gulp.src('./' + constants.clientFolder + '/CNAME')
+        .pipe(gulp.dest(dest));
+
     gulp.src('./' + constants.clientFolder + '/404' + constants.targetSuffix + '.html')
         .pipe(rename('404.html'))
         .pipe(gulp.dest(dest));
