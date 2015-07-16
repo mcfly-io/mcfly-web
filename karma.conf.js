@@ -19,12 +19,14 @@ module.exports = function(config) {
     var browserify = {
         debug: true,
         transform: [
-            ['babelify', {
-                'only': ['./client']
+            ['browserify-istanbul', {
+                ignore: ['**/*.test.js', '**/*.html', '**/bower_components/**', '**/node_modules/**', '**/client/scripts/lbServices.js']
             }],
-            [{
-                ignore: ['**/*.test.js', '**/*.html', '**/bower_components/**', '**/node_modules/**']
-            }, 'browserify-istanbul']
+            ['babelify', {
+                'stage': 0,
+                'optional': ['es7.asyncFunctions'],
+                'ignore': ['./node_modules', './bower_components']
+            }]
         ]
     };
     if(debug === true) {

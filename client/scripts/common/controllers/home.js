@@ -16,7 +16,7 @@ module.exports = function(app) {
             vm.registerSuccess = false;
             var email = vm.email;
             vm.email = null;
-            Subscriber.create({
+            return Subscriber.create({
                     email: email
                 })
                 .$promise
@@ -27,16 +27,10 @@ module.exports = function(app) {
                     vm.registerError = true;
                     vm.email = email;
                 })
-
-            .finally(function() {
-                vm.email = null;
-            });
+                .finally(function() {
+                    vm.email = null;
+                });
         };
-
-        //vm.video = function(e) {
-        //var videoElements = angular.element(e.srcElement);
-        //videoElements[0].play();
-        //}
     }
 
     controller.$inject = deps;
